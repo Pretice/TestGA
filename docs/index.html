@@ -7,14 +7,193 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-9WJWLRRN7Z');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestGA</title>
+    <title>Hello Google Analytics!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .analytics-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            color: #4285F4;
+        }
+        
+        .status {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 180px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+            color: #4285F4;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-desc {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        footer {
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feature {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>TestGA Page</h1>
+    <div class="container">
+        <div class="card">
+            <div class="analytics-icon">📊</div>
+            <h1>Hello Google Analytics!</h1>
+            <p class="description">
+                This page is successfully connected to Google Analytics. 
+                You can now track visitor behavior, traffic sources, and other important metrics.
+            </p>
+            <div class="status">Analytics Active</div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <div class="feature-title">Audience</div>
+                <div class="feature-desc">Understand your visitors</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📈</div>
+                <div class="feature-title">Acquisition</div>
+                <div class="feature-desc">Track traffic sources</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-title">Behavior</div>
+                <div class="feature-desc">Analyze user interactions</div>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <div class="feature-title">Conversions</div>
+                <div class="feature-desc">Measure goal completions</div>
+            </div>
+        </div>
+        
+        <footer>
+            Google Analytics Test Page • Ready to track
+        </footer>
+    </div>
 </body>
 </html>
